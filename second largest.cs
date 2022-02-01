@@ -11,13 +11,13 @@ namespace Demosra
         Console.Write("Input the size of array : ");
         num = Convert.ToInt32(Console.ReadLine());
  
-        //Stored values into the array
+  
         Console.Write("Input {0} elements in the array :\n", num);
         for (i = 0; i < num; i++)
         {            
             arr1[i] = Convert.ToInt32(Console.ReadLine());
         }
-        // find location of the largest element in the array 
+
         lrg = 0;
  
         for (i = 0; i < num; i++)
@@ -28,13 +28,12 @@ namespace Demosra
                 j = i;
             }
         }
-        // ignore the largest element and find the 2nd largest element in the array 
         lrg2nd = 0;
         for (i = 0; i < num; i++)
         {
             if (i == j)
             {
-                i++;  //ignoring the largest element 
+                i++;  
                 i--;
             }
             else
